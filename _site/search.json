@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "What is DataFest?\nThe American Statistical Association (ASA) DataFest is a celebration of data in which teams of undergraduates work around the clock to find and share meaning in a large, rich, and complex data set."
   },
   {
     "objectID": "index.html",
@@ -53,6 +53,20 @@
     "href": "dashboard.html",
     "title": "Dashboard",
     "section": "",
-    "text": "library(shinyLP)\n\nWarning: package 'shinyLP' was built under R version 4.2.1\n\niframe(500,500, \"https://allis.shinyapps.io/datafest/\")"
+    "text": "Warning: package 'shinyLP' was built under R version 4.2.1\n\n\n\nAttaching package: 'shinyLP'\n\n\nThe following object is masked from 'package:shiny':\n\n    runExample"
+  },
+  {
+    "objectID": "resources.html#code-repository-version-control-and-collaboration",
+    "href": "resources.html#code-repository-version-control-and-collaboration",
+    "title": "Resources",
+    "section": "Code repository, version control, and collaboration",
+    "text": "Code repository, version control, and collaboration\n\nGitHub: https://www.github.com\nHappy Git with R: https://happygitwithr.com/"
+  },
+  {
+    "objectID": "resources.html#interactive-dashboard",
+    "href": "resources.html#interactive-dashboard",
+    "title": "Resources",
+    "section": "Interactive dashboard:",
+    "text": "Interactive dashboard:\n\nShiny\n\nDeploy Shiny app on shinyapps.io: https://docs.rstudio.com/shinyapps.io/getting-started.html\nShiny tutorials: https://shiny.rstudio.com/tutorial/\nStatistical Computing RShiny Notes: Part I and Part II\n\n\nTableau:\n\nTableau Public: https://public.tableau.com/en-us/s\nTableau Desktop - free student license: https://www.tableau.com/academic"
   }
 ]
