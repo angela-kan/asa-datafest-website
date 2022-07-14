@@ -1,0 +1,31 @@
+{
+    "id": "22743653",
+    "path": "~/work/datafest/datafest-website/getting-started.qmd",
+    "project_path": "getting-started.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1657808457304.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "cursorPosition": "86,0",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "4519:2084.444580078125",
+        "rmdVisualCollapsedChunks": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1657808460,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1657808460987,
+    "read_only": false,
+    "read_only_alternatives": []
+}

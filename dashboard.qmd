@@ -1,0 +1,10 @@
+---
+title: "Dashboard"
+server: shiny
+sidebar: false
+---
+
+```{r}
+library(shinyLP)
+iframe(500,500, "https://allis.shinyapps.io/datafest/")
+```

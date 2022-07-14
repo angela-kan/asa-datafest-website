@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Angela Kan">
+  <meta name="dcterms.date" content="2022-07-01">
+  <title>DataFest - Your First DataFest Event</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fullcontent">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataFest</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html">Resources</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
+
+
+
+<div class="quarto-title"><h1 class="title display-7">Your First DataFest Event</h1></div><div class="quarto-title-meta"><div><div class="quarto-title-meta-heading">Author</div><div class="quarto-title-meta-contents"><div class="quarto-title-authors"><p>Angela Kan</p></div></div></div><div><div class="quarto-title-meta-heading">Published</div><div class="quarto-title-meta-contents"><p class="date">June 30, 2022</p></div></div></div></header>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>So you’re at your first DataFest event. In 48 hours, you will need to have cleaned your dataset, analyzed it, and collected your findings into a digestible slide format. That can seem like a daunting task, especially if you haven’t conducted data analysis before. But don’t worry! Here, we break the process down into several approachable steps by walking through analysis on the 2012 DataFest dataset. By the end of this tutorial, you’ll be fully equipped to dive into your DataFest journey.</p>
+</section>
+<section id="preparation-phase" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-phase">Preparation Phase</h2>
+<section id="setting-up-r" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-r">Setting up R</h3>
+<p>First, you’re going to need to choose a language and software. Python and R are two of the most popular choices for Data Science. For this tutorial, we’ll be working in R.</p>
+<p>To download R, go to this <a href="https://cloud.r-project.org/">link</a> and choose the correct download option.</p>
+<p>You should also <a href="https://www.rstudio.com/products/rstudio/download/">download</a> RStudio. Once you’ve finished the download and opened RStudio, your IDE will look something like this:</p>
+<p><img src="data/start_page.png" class="img-fluid"></p>
+<p>Open an R Markdown file by clicking on File -&gt; New File -&gt; R Markdown.</p>
+<p><img src="data/rscript.png" class="img-fluid"></p>
+<p>This will open a file that looks like this:</p>
+<p><img src="data/rmarkdown.png" class="img-fluid"></p>
+<p>This file will include some basic starter code examples, which you can delete and replace with your own.</p>
+<p>If you’d like to see the rendered version, click the knit button. The knitted starter code looks like this:</p>
+<p><img src="data/knitted.png" class="img-fluid"></p>
+<p>For more in depth help with R and R Markdown, check out these resources:</p>
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science textbook</a></li>
+<li><a href="https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf">R resource</a></li>
+<li><a href="https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/">R Markdown tutorial</a></li>
+</ul>
+</section>
+<section id="collaborative-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="collaborative-data-science">Collaborative Data Science</h3>
+<p>Since you’ll be working in a collaborative setting for DataFest, you’ll want to find a workflow that accommodates your entire team’s needs. One great tool for this is GitHub, a code hosting platform for version control and collaboration. GitHub allows you to create a code repository shared among different collaborators. Everyone is able to make changes to the project and access each others changes.</p>
+<p>This link offers an in-depth walkthrough on GitHub if you’d like more information: <a href="https://docs.github.com/en/get-started/quickstart/hello-world">GitHub walkthrough</a></p>
+<p>For a project like this, it’s a good idea to have everyone write individual code files with their assigned tasks. This can help minimize merge conflicts, which can take a lot of time to troubleshoot when files have multiple authors. It’s also good practice to comment your code so your teammates can understand it. Make sure to knit frequently to share your progress as well!</p>
+</section>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<p>Now that we’re all set up, we can assess the prompt and data we’ve been given to work with.</p>
+<p><strong>The prompt:</strong> <em>Help understand what motivates people to lend money to developing-nation entrepreneurs and what factors are associated with paying these loans.</em></p>
+<p><strong>The dataset:</strong> In this tutorial, we’ll be using the dataset from the 2012 DataFest event, provided by Kiva. Kiva is a non-profit micro finance organization which connects online lenders to entrepreneurs across the globe. The aim is to expand financial access to under served communities and help them thrive with the help of peer-to-peer lending. The dataset involves 4 main files and 2 supplementary files, as well as a data dictionary.</p>
+<p>A data dictionary is a collection of names, definitions, and attributes about data elements that are being used or captured in a database, information system, or part of a research project. It describes the meanings and purposes of data elements within the context of a project, and provides guidance on interpretation, accepted meanings and representation.</p>
+<p>This is what the Kiva data dictionary looks like:</p>
+<p><img src="data/datadict.png" class="img-fluid"></p>
+<p>Taking into account the outlined goal and provided data, you’ll want to ask yourself what you intend to present by the end of your 48 hours. What questions do you want to answer? What visualizations will be appropriate?</p>
+<p>At this step, we should browse the data to gain an understanding of what resources we have at our disposal and what analysis angles might make sense.</p>
+<p>First let’s import some libraries. These libraries allow you to access a broad range of data analysis tools not included in the base R package.</p>
+<p>*Make sure to call <code>install.packages("package_name")</code> in the console if you are getting package issues!</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, let’s import the data. Make sure you’ve downloaded the data into the proper directory, then import it using the appropriate file path.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>kiva_ll <span class="ot">&lt;-</span> <span class="fu">read_csv</span>((<span class="st">"data/lender_loans.csv"</span>))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>kiva_lender <span class="ot">&lt;-</span> <span class="fu">read_csv</span>((<span class="st">"data/lenders.csv"</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>kiva_loan <span class="ot">&lt;-</span> <span class="fu">read_csv</span>((<span class="st">"data/loans.csv"</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>kiva_partner <span class="ot">&lt;-</span> <span class="fu">read_csv</span>((<span class="st">"data/partners.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can use the <code>head()</code> command to take a look at the downloaded data:</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(kiva_loan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code># A tibble: 6 × 75
+  loan_id borrower_name        borrower_image_… status funded_amount paid_amount
+    &lt;dbl&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;       &lt;dbl&gt;
+1      89 Rose                              246 paid             500         500
+2     102 Simon                             264 paid             500         500
+3     122 Joseph                            287 paid             500         500
+4     124 Richard                           294 paid             500         500
+5     147 Anonymous                      726677 refun…             0          NA
+6     193 Tesla Rudibel Andino              344 paid             375         375
+# … with 69 more variables: activity &lt;chr&gt;, sector &lt;chr&gt;, use &lt;chr&gt;,
+#   location.country_code &lt;chr&gt;, location.country &lt;chr&gt;, location.town &lt;chr&gt;,
+#   location.geo.level &lt;chr&gt;, lat &lt;dbl&gt;, lon &lt;dbl&gt;, partner_id &lt;dbl&gt;,
+#   posted_yr &lt;dbl&gt;, posted_mo &lt;dbl&gt;, posted_day &lt;dbl&gt;, posted_hr &lt;dbl&gt;,
+#   posted_min &lt;dbl&gt;, posted_sec &lt;dbl&gt;, loan_amount &lt;dbl&gt;,
+#   terms.disbursal_amount &lt;dbl&gt;, terms.loan_amount &lt;dbl&gt;,
+#   terms.loss_liability.nonpayment &lt;chr&gt;, …</code></pre>
+</div>
+</div>
+<p>For a clearer view of the entire dataframe, we can also open it up in Excel or any csv file viewer:</p>
+<p><img src="data/kiva_loans.png" class="img-fluid"></p>
+<p>What relationships do you notice from the dataframe?</p>
+<p>At a glance, we can see columns like status, activity, and sector. Some of these columns are self-explanatory. Others may require some additional googling to understand. For instance, you might ask what the difference between a borrower and a partner is, or you may need to google other industry specific terms.</p>
+<p>Looking at this dataframe, you could examine how loans are given out over time, or what sectors receive the most funding. Maybe you can look at how geographical location impacts loans given or received.</p>
+<p>When brainstorming these ideas, it’s important to take into account what information your data does and doesn’t include - missing or incomplete data is very common, and it may limit your analysis options. This brings us to our next topic: Data Cleaning.</p>
+</section>
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+<p>Before you can start performing analysis, you’ll need to make sure the data is clean and workable. What we’ve just imported is considered raw data, which may lack headers, contain wrong data types (e.g.&nbsp;numbers stored as strings), wrong category labels, unknown or unexpected character encoding and so on. These issues are caused by a variety of factors. For instance, data collected by surveys often includes inconsistent formatting or data type issues because users sometimes input information incorrectly. Keep an eye out for common problems such as duplicates, missing fields, and inconsistencies.</p>
+<p>It’s good practice to resolve these problems early on before conducting analysis, as they tend to cause more trouble the later they are addressed.</p>
+<p>As an example, let’s return to the <code>kiva_loans</code> dataframe. If we scroll through it, we’ll find that some columns seem to have a lot of NAs.</p>
+<p><img src="data/kiva_loans_na.png" class="img-fluid"></p>
+<p>Let’s pick some columns and check how many NAs there are exactly:</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(kiva_loan[<span class="st">"planned_expiration_yr"</span>], <span class="dv">2</span>, <span class="cf">function</span>(x) <span class="fu">sum</span>(<span class="fu">is.na</span>(x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>planned_expiration_yr 
+                89856 </code></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(kiva_loan[<span class="st">"sector"</span>], <span class="dv">2</span>, <span class="cf">function</span>(x) <span class="fu">sum</span>(<span class="fu">is.na</span>(x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>sector 
+     0 </code></pre>
+</div>
+</div>
+<p>It looks like some columns have a lot of NAs. These columns aren’t going to help very much and can be dropped.</p>
+<p>That’s one example of data cleanliness. However, it’s important not to waste time in an event like this, and that means not cleaning data which we won’t end up using. For that reason, now is a good time to make note of any problematic features in your data, but hold off on the actual cleaning until you have a more concrete plan</p>
+<p>Check out this resource for more detailed information on data cleaning: <a href="https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf">Data Cleaning with R</a></p>
+</section>
+<section id="project-planning" class="level2">
+<h2 class="anchored" data-anchor-id="project-planning">Project Planning</h2>
+<section id="rough-plan" class="level3">
+<h3 class="anchored" data-anchor-id="rough-plan">Rough Plan</h3>
+<p>So now you’ve taken a look at the prompt and data and have a general idea of what angle you would like to take for your analysis. Let’s start by coming up with a rough plan.</p>
+<p>First, let’s revisit the prompt: <em>Help understand what motivates people to lend money to developing-nation entrepreneurs and what factors are associated with paying these loans.</em></p>
+<p>We can split the prompt into two main ideas: <strong>money lending motivations</strong> and <strong>loan repayment factors</strong>. You will probably want to create different models that focus on each of these themes. With that in mind, you can come up with a plan for what types of models you’ll want to create and which models are feasible given the provided data.</p>
+<p>As an example, the <code>kiva_loans</code> dataframe includes information on loan amounts and years. We can use this to see which years have the highest loan amounts as well as how loan amounts change over time. We also have geographical information for the loans - we could create a model to see where most loans are coming from or where they are given to. Take some time to think about the relationships you can observe and ask yourself which ones are the most relevant for the questions you want to answer.</p>
+<p>Once you’ve determined the models you would like to create and present, you can start distributing tasks among your group and get to work!</p>
+</section>
+<section id="timeline" class="level3">
+<h3 class="anchored" data-anchor-id="timeline">Timeline</h3>
+<p>So now you know a bit more about getting started with data analysis. How do we put it all together? Here is a sample timeline over 48 hours of what the work distribution might look like for a team of four members.</p>
+</section>
+<section id="friday" class="level3">
+<h3 class="anchored" data-anchor-id="friday">Friday</h3>
+<ul>
+<li><p>6:00 PM - kickoff!</p></li>
+<li><p>7:00 PM - brainstorming session (all members)</p></li>
+<li><p>8:00 PM - basic data cleaning (1 team member) - formatting variables - making sure missing conventions are consistent</p></li>
+<li><p>10:00 PM - exploratory data analysis (all members)</p></li>
+</ul>
+</section>
+<section id="saturday" class="level3">
+<h3 class="anchored" data-anchor-id="saturday">Saturday</h3>
+<ul>
+<li><p>9:00 AM - team check in, finalize topics to examine - finalize models to create</p></li>
+<li><p>10:00 AM - split into teams of two - team 1 on model 1 - team 2 on model 2</p></li>
+<li><p>12:00 PM - lunch break</p></li>
+<li><p>12:30 PM - team 1 on model 1 - team 2 on model 2</p></li>
+<li><p>5:00 PM - dinner break</p></li>
+<li><p>6:00 PM - team check in</p></li>
+<li><p>7:00 PM - team 1 on model 1 - team 2 on model 2</p></li>
+<li><p>10:00 PM - start working on presentation (all members)</p></li>
+</ul>
+</section>
+<section id="sunday" class="level3">
+<h3 class="anchored" data-anchor-id="sunday">Sunday</h3>
+<ul>
+<li><p>9:00 AM - finish presentation (all members) - run through presentation</p></li>
+<li><p>12:00 PM - judging</p></li>
+</ul>
+<p>The important takeaways:</p>
+<p>Leave enough time to put together the presentation. Prioritize tasks so that you will have something to present at the end. Be clear about objectives and make sure everyone knows what they are working on.</p>
+<p>Check in periodically to make sure you are staying on schedule. Don’t be afraid to change plans - if you find yourself ahead of schedule, you might be able to incorporate other angles into your analysis. On the other hand, you might find that you won’t be able to complete all the tasks you originally envisioned. That’s alright! The most important thing is understanding what a realistic deliverable looks like for you and your team.</p>
+<p>Good luck and have fun!</p>
+
+
+</section>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>
