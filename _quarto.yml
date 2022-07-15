@@ -22,12 +22,12 @@ website:
         text: "Contact"
 
   sidebar:
-    - title: "Resources"
+    - title: "Tutorials"
       style: "docked"
       background: light
       collapse-level: 2
       contents:
-        - resources.qmd
+        - tutorial.qmd
         - getting-started.qmd
 
 format:
