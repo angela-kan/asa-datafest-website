@@ -6,5 +6,5 @@ sidebar: false
 
 ```{r, message=FALSE, warning=FALSE}
 library(shinyLP)
-iframe(500,500, "https://allis.shinyapps.io/datafest/")
+iframe(800,500, "https://allis.shinyapps.io/datafest/")
 ```
