@@ -14,18 +14,20 @@ website:
         text: "Upcoming Events"
       - file: resources.qmd
         text: "Resources"
+      - file: tutorial.qmd
+        text: "Tutorials"
       - file: dashboard.qmd
         text: "Dashboard"
       - file: contact.qmd
         text: "Contact"
 
   sidebar:
-    - title: "Resources"
+    - title: "Tutorials"
       style: "docked"
       background: light
       collapse-level: 2
       contents:
-        - resources.qmd
+        - tutorial.qmd
         - getting-started.qmd
 
 format:

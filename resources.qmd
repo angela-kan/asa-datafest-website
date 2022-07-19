@@ -1,5 +1,6 @@
 ---
 title: "Resources"
+sidebar: false
 ---
 
 ## Code repository, version control, and collaboration
@@ -7,19 +8,3 @@ title: "Resources"
 -   GitHub: [https://www.github.com](https://www.github.com/)
 
 -   *Happy Git with R*: <https://happygitwithr.com/>
-
-## Interactive dashboard:
-
--   Shiny
-
-    -   Deploy Shiny app on shinyapps.io: <https://docs.rstudio.com/shinyapps.io/getting-started.html>
-
-    -   Shiny tutorials: <https://shiny.rstudio.com/tutorial/>
-
-    -   Statistical Computing RShiny Notes: [Part I](https://shawnsanto.com/files/sta323/slides/lec-9a-shiny1.html#1) and [Part II](https://shawnsanto.com/files/sta323/slides/lec-9b-shiny2.html#1)\
-
--   Tableau:
-
-    -   Tableau Public: <https://public.tableau.com/en-us/s>
-
-    -   Tableau Desktop - free student license: <https://www.tableau.com/academic>
