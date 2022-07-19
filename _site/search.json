@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "What is DataFest?",
     "section": "",
-    "text": "The American Statistical Association (ASA) DataFest is a celebration of data in which teams of undergraduates work around the clock to find and share meaning in a large, rich, and complex data set.\nDataFest was founded at UCLA in 2011, when 30 students gathered for 48 intense hours to analyze five years of arrest records provided by Lt. Thomas Zak of the Los Angeles Police Department. ASA DataFest is now sponsored by the American Statistical Association and hosted by several of the most prestigious colleges and universities in the country. More than 2000 students take part from schools such as UCLA, Pomona College, Cal Poly San Luis Obispo, UC Riverside, University of Southern California, Purdue University, Duke, the University of North Carolina, North Carolina State, Emory, Princeton, Dartmouth, Smith, Hampshire, Amherst, Mt. Holyoke, and the University of Massachusetts.\nA key feature of ASA DataFest is that it brings together the data science community. Undergraduate students do the work, but they are assisted by roving consultants who are graduate students, faculty, and industry professionals. Many professionals find ASA DataFest to be a great recruiting opportunity–they get to watch talented undergraduate students work under pressure in a team and examine their thinking processes.\nAfter two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. Prizes are given for Best in Show, Best Visualization, and Best Use of External Data."
+    "text": "DataFest was founded at UCLA in 2011, when 30 students gathered for 48 intense hours to analyze five years of arrest records provided by Lt. Thomas Zak of the Los Angeles Police Department. ASA DataFest is now sponsored by the American Statistical Association and hosted by several of the most prestigious colleges and universities in the country. More than 2000 students take part from schools such as UCLA, Pomona College, Cal Poly San Luis Obispo, UC Riverside, University of Southern California, Purdue University, Duke, the University of North Carolina, North Carolina State, Emory, Princeton, Dartmouth, Smith, Hampshire, Amherst, Mt. Holyoke, and the University of Massachusetts.\nA key feature of ASA DataFest is that it brings together the data science community. Undergraduate students do the work, but they are assisted by roving consultants who are graduate students, faculty, and industry professionals. Many professionals find ASA DataFest to be a great recruiting opportunity–they get to watch talented undergraduate students work under pressure in a team and examine their thinking processes.\nAfter two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. Prizes are given for Best in Show, Best Visualization, and Best Use of External Data."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "DataFest",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "getting-started.html#introduction",
@@ -82,5 +82,26 @@
     "title": "About",
     "section": "Experience",
     "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "Your First DataFest Event",
+    "section": "",
+    "text": "So you’re at your first DataFest event. In 48 hours, you will need to have cleaned your dataset, analyzed it, and collected your findings into a digestible slide format. That can seem like a daunting task, especially if you haven’t conducted data analysis before. But don’t worry! Here, we break the process down into several approachable steps by walking through analysis on the 2012 DataFest dataset. By the end of this tutorial, you’ll be fully equipped to dive into your DataFest journey."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "GitHub: https://www.github.com\nHappy Git with R: https://happygitwithr.com/"
+  },
+  {
+    "objectID": "upcoming-events.html",
+    "href": "upcoming-events.html",
+    "title": "Upcoming Events",
+    "section": "",
+    "text": "2022 DataFest event has already ended. Please check your university website for furter information about 2023 DataFest."
   }
 ]
