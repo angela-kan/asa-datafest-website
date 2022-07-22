@@ -3,7 +3,7 @@ title: "DataFest"
 sidebar: false
 ---
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(shinyLP)
 iframe(800,500, "https://allis.shinyapps.io/datafest/")
 ```
