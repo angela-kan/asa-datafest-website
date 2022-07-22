@@ -16,8 +16,6 @@ website:
         text: "Resources"
       - file: tutorial.qmd
         text: "Tutorials"
-      - file: dashboard.qmd
-        text: "Dashboard"
       - file: contact.qmd
         text: "Contact"
 

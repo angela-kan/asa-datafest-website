@@ -2,3 +2,5 @@
 title: "Upcoming Events"
 sidebar: false
 ---
+
+2022 DataFest event has already ended. Please check your university website for furter information about 2023 DataFest.
