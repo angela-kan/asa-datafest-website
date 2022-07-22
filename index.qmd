@@ -1,10 +1,6 @@
 ---
-title: "Dashboard"
-server: shiny
+title: "DataFest"
 sidebar: false
 ---
 
-```{r, message=FALSE, warning=FALSE}
-library(shinyLP)
-iframe(800,500, "https://allis.shinyapps.io/datafest/")
-```
+Landing Page TBA

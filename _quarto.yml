@@ -16,6 +16,8 @@ website:
         text: "Resources"
       - file: tutorial.qmd
         text: "Tutorials"
+      - file: dashboard.qmd
+        text: "Dashboard"
       - file: contact.qmd
         text: "Contact"
 
@@ -27,9 +29,6 @@ website:
       contents:
         - tutorial.qmd
         - getting-started.qmd
-        - eda.qmd
-        - regression.qmd
-        - hypothesis-testing.qmd
 
 format:
   html:
