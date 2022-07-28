@@ -4,7 +4,6 @@ project:
 website:
   title: "DataFest"
   navbar:
-    background: primary
     left:
       - file: index.qmd
         text: "Home"
@@ -27,11 +26,14 @@ website:
       contents:
         - tutorial.qmd
         - getting-started.qmd
+        - eda.qmd
+        - introductory.qmd
+        - advanced.qmd
 
-format:
-  html:
-    theme: zephyr
-    css: styles.css
+# format:
+#   html:
+#     theme: zephyr
+#     css: styles.css
 
 editor: visual
 

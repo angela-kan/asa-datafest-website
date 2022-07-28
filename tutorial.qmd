@@ -4,4 +4,6 @@ title: "Tutorial"
 
 Welcome to the tutorials section.
 
-Tutorials are here.
+Here we've compiled some detailed tutorials to guide you on your DataFest journey. If this is your first time participating in DataFest, check out the Getting Started Guide for general tips and strategies. For a more in-depth look at the data analysis process, check out the introductory and advanced tutorials. Take a look at the Resources tab for helpful links as well.
+
+Good luck and have fun!

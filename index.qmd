@@ -1,9 +1,11 @@
 ---
-title: "DataFest"
 sidebar: false
+margin-top: 0px
 ---
 
-```{r, message=FALSE, warning=FALSE}
+::: column-screen
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(shinyLP)
-iframe(800,500, "https://allis.shinyapps.io/datafest/")
+iframe(width= "100%" , height = "1000px", "https://allis.shinyapps.io/datafest/")
 ```
+:::

@@ -4,14 +4,21 @@
     "href": "about.html",
     "title": "What is DataFest?",
     "section": "",
-    "text": "The American Statistical Association (ASA) DataFest is a celebration of data in which teams of undergraduates work around the clock to find and share meaning in a large, rich, and complex data set.\nDataFest was founded at UCLA in 2011, when 30 students gathered for 48 intense hours to analyze five years of arrest records provided by Lt. Thomas Zak of the Los Angeles Police Department. ASA DataFest is now sponsored by the American Statistical Association and hosted by several of the most prestigious colleges and universities in the country. More than 2000 students take part from schools such as UCLA, Pomona College, Cal Poly San Luis Obispo, UC Riverside, University of Southern California, Purdue University, Duke, the University of North Carolina, North Carolina State, Emory, Princeton, Dartmouth, Smith, Hampshire, Amherst, Mt. Holyoke, and the University of Massachusetts.\nA key feature of ASA DataFest is that it brings together the data science community. Undergraduate students do the work, but they are assisted by roving consultants who are graduate students, faculty, and industry professionals. Many professionals find ASA DataFest to be a great recruiting opportunity–they get to watch talented undergraduate students work under pressure in a team and examine their thinking processes.\nAfter two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. Prizes are given for Best in Show, Best Visualization, and Best Use of External Data."
+    "text": "DataFest was founded at UCLA in 2011, when 30 students gathered for 48 intense hours to analyze five years of arrest records provided by Lt. Thomas Zak of the Los Angeles Police Department. ASA DataFest is now sponsored by the American Statistical Association and hosted by several of the most prestigious colleges and universities in the country. More than 2000 students take part from schools such as UCLA, Pomona College, Cal Poly San Luis Obispo, UC Riverside, University of Southern California, Purdue University, Duke, the University of North Carolina, North Carolina State, Emory, Princeton, Dartmouth, Smith, Hampshire, Amherst, Mt. Holyoke, and the University of Massachusetts.\nA key feature of ASA DataFest is that it brings together the data science community. Undergraduate students do the work, but they are assisted by roving consultants who are graduate students, faculty, and industry professionals. Many professionals find ASA DataFest to be a great recruiting opportunity–they get to watch talented undergraduate students work under pressure in a team and examine their thinking processes.\nAfter two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. Prizes are given for Best in Show, Best Visualization, and Best Use of External Data."
   },
   {
-    "objectID": "getting-started.html#introduction",
-    "href": "getting-started.html#introduction",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "If you are a student interested in participating in DataFest, check out the upcoming events tab or reach out to the faculty at your institution."
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
     "title": "Your First DataFest Event",
-    "section": "Introduction",
-    "text": "Introduction\nSo you’re at your first DataFest event. In 48 hours, you will need to have cleaned your dataset, analyzed it, and collected your findings into a digestible slide format. That can seem like a daunting task, especially if you haven’t conducted data analysis before. But don’t worry! Here, we break the process down into several approachable steps by walking through analysis on the 2012 DataFest dataset. By the end of this tutorial, you’ll be fully equipped to dive into your DataFest journey."
+    "section": "",
+    "text": "So you’re at your first DataFest event. In 48 hours, you will need to have cleaned your dataset, analyzed it, and collected your findings into a digestible slide format. That can seem like a daunting task, especially if you haven’t conducted data analysis before. But don’t worry! Here, we break the process down into several approachable steps by walking through analysis on the 2012 DataFest dataset. By the end of this tutorial, you’ll be fully equipped to dive into your DataFest journey."
   },
   {
     "objectID": "getting-started.html#preparation-phase",
@@ -42,31 +49,31 @@
     "text": "Project Planning\n\nRough Plan\nSo now you’ve taken a look at the prompt and data and have a general idea of what angle you would like to take for your analysis. Let’s start by coming up with a rough plan.\nFirst, let’s revisit the prompt: Help understand what motivates people to lend money to developing-nation entrepreneurs and what factors are associated with paying these loans.\nWe can split the prompt into two main ideas: money lending motivations and loan repayment factors. You will probably want to create different models that focus on each of these themes. With that in mind, you can come up with a plan for what types of models you’ll want to create and which models are feasible given the provided data.\nAs an example, the kiva_loans dataframe includes information on loan amounts and years. We can use this to see which years have the highest loan amounts as well as how loan amounts change over time. We also have geographical information for the loans - we could create a model to see where most loans are coming from or where they are given to. Take some time to think about the relationships you can observe and ask yourself which ones are the most relevant for the questions you want to answer.\nOnce you’ve determined the models you would like to create and present, you can start distributing tasks among your group and get to work!\n\n\nTimeline\nSo now you know a bit more about getting started with data analysis. How do we put it all together? Here is a sample timeline over 48 hours of what the work distribution might look like for a team of four members.\n\n\nFriday\n\n6:00 PM - kickoff!\n7:00 PM - brainstorming session (all members)\n8:00 PM - basic data cleaning (1 team member) - formatting variables - making sure missing conventions are consistent\n10:00 PM - exploratory data analysis (all members)\n\n\n\nSaturday\n\n9:00 AM - team check in, finalize topics to examine - finalize models to create\n10:00 AM - split into teams of two - team 1 on model 1 - team 2 on model 2\n12:00 PM - lunch break\n12:30 PM - team 1 on model 1 - team 2 on model 2\n5:00 PM - dinner break\n6:00 PM - team check in\n7:00 PM - team 1 on model 1 - team 2 on model 2\n10:00 PM - start working on presentation (all members)\n\n\n\nSunday\n\n9:00 AM - finish presentation (all members) - run through presentation\n12:00 PM - judging\n\nThe important takeaways:\nLeave enough time to put together the presentation. Prioritize tasks so that you will have something to present at the end. Be clear about objectives and make sure everyone knows what they are working on.\nCheck in periodically to make sure you are staying on schedule. Don’t be afraid to change plans - if you find yourself ahead of schedule, you might be able to incorporate other angles into your analysis. On the other hand, you might find that you won’t be able to complete all the tasks you originally envisioned. That’s alright! The most important thing is understanding what a realistic deliverable looks like for you and your team.\nGood luck and have fun!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DataFest",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Landing Page TBA"
+    "text": "GitHub: https://www.github.com\nHappy Git with R: https://happygitwithr.com/"
   },
   {
-    "objectID": "resources.html#code-repository-version-control-and-collaboration",
-    "href": "resources.html#code-repository-version-control-and-collaboration",
+    "objectID": "resources.html#r-and-rstudio",
+    "href": "resources.html#r-and-rstudio",
     "title": "Resources",
-    "section": "Code repository, version control, and collaboration",
-    "text": "Code repository, version control, and collaboration\n\nGitHub: https://www.github.com\nHappy Git with R: https://happygitwithr.com/"
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\nR download: https://cran.r-project.org/bin/windows/base/\nR Shiny download: https://www.rstudio.com/products/rstudio/download/"
   },
   {
     "objectID": "tutorial.html",
     "href": "tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Welcome to the tutorials section.\nTutorials are here."
+    "text": "Here we’ve compiled some detailed tutorials to guide you on your DataFest journey. If this is your first time participating in DataFest, check out the Getting Started Guide for general tips and strategies. For a more in-depth look at the data analysis process, check out the introductory and advanced tutorials. Take a look at the Resources tab for helpful links as well.\nGood luck and have fun!"
   },
   {
     "objectID": "upcoming-events.html",
     "href": "upcoming-events.html",
     "title": "Upcoming Events",
     "section": "",
-    "text": "2022 DataFest event has already ended. Please check your university website for furter information about 2023 DataFest."
+    "text": "2022 DataFest event has already ended. Please check your university website for further information about 2023 DataFest."
   }
 ]
